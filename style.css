@@ -135,7 +135,9 @@ body {
 
   .text-marginTop {
     margin-top: 0px;
+    margin-bottom: 0px;
   }
+
 /*herosection*/
 .herosection {
     position: relative;
@@ -226,7 +228,7 @@ body {
     color: white;
     padding: 10px;
     box-sizing: border-box;
-    min-height: 50px;
+    min-height: 60px;
     border-radius: 8px;
 }
 
@@ -250,11 +252,15 @@ body {
 }
 
 .button {
+    display: inline-block;
     min-width: 180px;
     min-height: 65px;
     border: 1px solid black;
     border-radius: 50px;
     margin-bottom: 20px;
+    align-content: center;
+    text-align: center;
+    padding: 5px 20px;
 }
 
 .placeholder {
@@ -277,9 +283,27 @@ body {
 
 
 .kids__area {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
     min-height: 390px;
     width: 100%;
+    color: white;
     background: linear-gradient(to bottom right, rgba(201, 91, 98, 1), rgba(247, 166, 62, 1));
+}
+.kids__areaButton {
+    background-color: white;
+    color: rgba(246, 147, 35, 1);
+    align-self: flex-end;
+    border: 1px solid rgba(209, 125, 51, 1);
+    box-shadow: 4px 4px 6px rgba(82, 157, 184, 0.25);
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 5px;
+}
+.kids__areaDiscription {
+    display: flex;
+    align-items: center;
 }
 
 
