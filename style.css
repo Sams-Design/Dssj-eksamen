@@ -1,6 +1,9 @@
 body {
     font-family: "Montserrat", sans-serif;
 }
+.body__quiz {
+    background: linear-gradient(to bottom right, rgba(30, 107, 218, 1) 0%, rgba(179, 205, 242, 1) 68%, rgba(19, 100, 216, 1) 100% );
+}
 
 
 /*typography*/
@@ -34,6 +37,11 @@ body {
 .text-bold {
     font-weight: bold;
 }
+.text-marginTop {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
 /*----*/
 
 /*header*/
@@ -98,7 +106,6 @@ body {
     cursor: pointer;
 }
 
-
 .menu-list {
     list-style: none;
     padding: 0;
@@ -118,26 +125,6 @@ body {
 }
 /*----*/
 
-.svg-container {
-    width: 100%;
-    height: 50px; 
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
-    margin-bottom: 0px;
-  }
-
-  .svg-container svg {
-    width: 100%;
-    height: auto;
-  }
-
-  .text-marginTop {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
 
 /*herosection*/
 .herosection {
@@ -181,6 +168,24 @@ body {
     display: block;
     fill: whitesmoke;
 }
+/*----*/
+
+/*svg container*/
+.svg-container {
+    width: 100%;
+    height: 50px; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin-bottom: 0px;
+  }
+
+  .svg-container svg {
+    width: 100%;
+    height: auto;
+  }
 /*----*/
 
 .process__slider {
@@ -252,6 +257,7 @@ body {
     margin-bottom: 20px;
 }
 
+/*button*/
 .button {
     display: inline-block;
     min-width: 180px;
@@ -263,6 +269,7 @@ body {
     text-align: center;
     padding: 5px 20px;
 }
+/*----*/
 
 .placeholder {
     justify-content: center;
@@ -281,8 +288,7 @@ body {
     margin: 65px auto;
 }
 
-
-
+/* kids banner */
 .kids__area {
     display: flex;
     flex-direction: column;
@@ -306,10 +312,10 @@ body {
     display: flex;
     align-items: center;
 }
+/*----*/
 
 
-
-
+/*footer*/
 .footer {
     display: flex;
     justify-content: space-between;
@@ -321,3 +327,108 @@ body {
 .footer__contact {
     max-width: 165px;
 }
+/*----*/
+
+/*quiz*/
+.quiz__discription {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quiz__map img{
+    max-width: 340px;
+    margin-top: 40px;
+}
+.Answers {
+    color: rgba(246, 147, 35, 1);
+    font-weight: bold;
+}
+.question {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+
+  .question-number {
+    font-size: 65px;
+    margin-bottom: 10px;
+  }
+
+  .question-text {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .guiz__map {
+    max-width: 340px;
+    margin-top: 40px;
+  }
+  .question-image {
+    width: 100%;
+    max-width: 340px;
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+  }
+  .subtitle-section {
+    display: flex;
+    min-width: 320px;
+    max-width: 340px;
+    min-height: 95px;
+    padding: 10px;
+    background-color: white; 
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: adds some shadow for better look */
+  }
+  .question-subtitle {
+    flex: 1;
+    font-size: 18px; /* Adjust font size as needed */
+    
+    margin: 0; /* Remove default margin */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .question-mark {
+    font-size: 24px; /* Larger font size for emphasis */
+    color: #d9534f; /* Red color for the question mark */
+    font-weight: bold;
+  }
+
+  .options {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .option {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .option button {
+    min-width: 340px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: rgba(29, 52, 99, 1);
+    cursor: pointer;
+    color: white;
+  }
+
+  .option button.correct {
+    background-color: rgba(24, 129, 101, 1);
+    color: white;
+  }
+
+  .option button.incorrect {
+    background-color: #f44336;
+    color: white;
+  }
