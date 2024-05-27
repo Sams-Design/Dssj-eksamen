@@ -12,6 +12,17 @@
         }
     });
 
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector(".quiz__process");
+        if (header && window.scrollY > 80) {
+            header.classList.add("quiz__process--scrolled");
+            header.classList.remove("quiz__process--transparent");
+        } else if (header) {
+            header.classList.add("quiz__process--transparent");
+            header.classList.remove("quiz__process--scrolled");
+        }
+    });
+
     // Menu Button Click Event Listener
     const menuButton = document.querySelector(".menu-button");
     if (menuButton) {
@@ -53,35 +64,29 @@
           const questionElement = document.createElement('section');
           questionElement.classList.add('question');
 
-          const questionNumberElement = document.createElement('h1');
+          const questionNumberElement = document.createElement('h2');
           questionNumberElement.textContent = question.questionNumber;
-          questionNumberElement.classList.add('question-number');
+          questionNumberElement.classList.add('question__number');
           questionElement.appendChild(questionNumberElement);
-
-          const questionTextElement = document.createElement('h2');
-          questionTextElement.textContent = question.questionText;
-          questionTextElement.classList.add('question-text');
-          questionElement.appendChild(questionTextElement);
 
           const imgElement = document.createElement('img');
           imgElement.src = question.imageUrl;
-          imgElement.classList.add('question-image');
+          imgElement.classList.add('question__image');
           questionElement.appendChild(imgElement);
 
-          const subtitleSection = document.createElement('section'); // Neues section-Element für Untertitel
-          subtitleSection.classList.add('subtitle-section'); // Klasse für die neue section hinzufügen
+          const subtitleSection = document.createElement('section');
+          subtitleSection.classList.add('subtitle___section'); 
           
-          const subtitleElement = document.createElement('h3');
+          const questionTextElement = document.createElement('h3');
+          questionTextElement.textContent = question.questionText;
+          questionTextElement.classList.add('question__text');
+          questionElement.appendChild(questionTextElement);
+
+          const subtitleElement = document.createElement('h4');
           subtitleElement.textContent = question.questionSubtitle;
-          subtitleElement.classList.add('question-subtitle');
+          subtitleElement.classList.add('question__subtitle');
           
-          // ? tegn
-          const questionMarkElement = document.createElement('span');
-          questionMarkElement.classList.add('question-mark');
-          questionMarkElement.textContent = '?';
-          subtitleElement.appendChild(questionMarkElement);
-          
-          subtitleSection.appendChild(subtitleElement); // 
+          subtitleSection.appendChild(subtitleElement); 
           questionElement.appendChild(subtitleSection);
 
           const optionsElement = document.createElement('ul');
@@ -90,11 +95,8 @@
             const optionElement = document.createElement('li');
             optionElement.classList.add('option');
           
-            const optionLetterClass = `option-letter-${option.optionLetter}`;
-            optionElement.classList.add(optionLetterClass);
-          
             const buttonElement = document.createElement('button');
-            buttonElement.classList.add('button__quiz');
+            buttonElement.classList.add('option__button');
             buttonElement.textContent = `${option.optionLetter}. ${option.optionText}`;
             buttonElement.onclick = () => {
               handleAnswerClick(buttonElement, question.options);
@@ -121,7 +123,6 @@
                   button.classList.add('correct');
                 } else {
                   button.classList.add('incorrect');
-                  // find correct answer
                   const correctButton = buttons.find(b => b.textContent.includes(options.find(opt => opt.isCorrect).optionLetter));
                   correctButton.classList.add('correct');
                 }
@@ -132,7 +133,7 @@
         }
 
         function updateProgress() {
-            const progressElement = document.querySelector('.Answers');
+            const progressElement = document.querySelector('.answers');
             progressElement.textContent = `${answeredQuestions}/${totalQuestions}`;
         }
       })
