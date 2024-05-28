@@ -78,9 +78,9 @@ document.addEventListener('DOMContentLoaded', function() {
                 questionTextElement.classList.add('question__text', 'section__headline');
                 questionContentSection.appendChild(questionTextElement);
 
-                const subtitleElement = document.createElement('h4');
+                const subtitleElement = document.createElement('h3');
                 subtitleElement.textContent = question.questionSubtitle;
-                subtitleElement.classList.add('question__subtitle', 'text-large');
+                subtitleElement.classList.add('question__subtitle', 'section__headline');
                 questionContentSection.appendChild(subtitleElement);
 
                 questionElement.appendChild(questionContentSection);

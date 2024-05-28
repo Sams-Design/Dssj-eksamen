@@ -2,7 +2,7 @@
     {
       "questionNumber": "1.",
       "questionText": "Find skulpturen i nærheden af slottet",
-      "imageUrl": "images/bronze-equestrian-statue-3301377_640.jpg",
+      "imageUrl": "images/rytterstatue.png",
       "questionSubtitle": "Hvad hedder Skulpturen?",
       "options": [
         {
@@ -27,7 +27,7 @@
     {
       "questionNumber": "2.",
       "questionText": "Tæl kanonerne omkring slottet",
-      "imageUrl": "images/Kanon-ved-Sønderborg-Slot-credit-Comwell-Hotels.jpg",
+      "imageUrl": "images/Kanon-ved-Sønderborg-Slot-credit-Comwell-Hotels-kopi.jpg",
       "questionSubtitle": "Hvor mange kanoner stå omkring slottet?",
       "options": [
         {
@@ -52,7 +52,7 @@
     {
       "questionNumber": "3.",
       "questionText": "Find ud hvad der gemmer sig her",
-      "imageUrl": "images/236177_Snderborg-Slot-fra-luften.webp",
+      "imageUrl": "images/fangehulet.png",
       "questionSubtitle": "Hvad gemmer sig her?",
       "options": [
         {
@@ -76,33 +76,33 @@
     },
     {
       "questionNumber": "4.",
-      "questionText": "Tæl vinduerne på bagsiden",
-      "imageUrl": "images/sonderborg_©Daniel Villadsen.jpg",
-      "questionSubtitle": "Hvor mange vinduer er der?",
+      "questionText": "Undersøg vejen på bagsiden",
+      "imageUrl": "images/anker.png",
+      "questionSubtitle": "Hvad ligger her?",
       "options": [
         {
           "optionLetter": "A",
-          "optionText": "22 vinduer"
+          "optionText": "En hest"
         },
         {
           "optionLetter": "B",
-          "optionText": "0 vinduer"
+          "optionText": "En Skib"
         },
         {
           "optionLetter": "C",
-          "optionText": "21 vinduer",
+          "optionText": "En anker",
           "isCorrect": true
         },
         {
           "optionLetter": "D",
-          "optionText": "10 vinduer"
+          "optionText": "Ingenting"
         }
       ]
     },
     {
       "questionNumber": "5.",
       "questionText": "Find ud hvor mange døre der er ved indgangen",
-      "imageUrl": "images/236177_Snderborg-Slot-fra-luften.webp",
+      "imageUrl": "images/slot-indgang.png",
       "questionSubtitle": "Hvor mange dør er der?",
       "options": [
         {
