@@ -373,6 +373,10 @@ body {
     display: flex;
     flex-direction: column;
   }
+  .question__subtitle {
+    padding-left: 10px;
+    margin-bottom: 10px;
+  }
   .question__text {
     margin-bottom: 10px;
   }
@@ -441,4 +445,7 @@ body {
     .section__headline {
         font-size: 1.5rem;
     }
+    .question__subtitle {
+        padding-left: 0;
+      }
   }
